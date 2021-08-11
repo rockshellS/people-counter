@@ -8,18 +8,29 @@ body {
     text-align: center;
 }
 
+.div{
+    display: flex;
+    justify-content: center;
+    margin: 50%;
+}
+
 h1 {
     margin-top: 10px;
     margin-bottom: 10px;
+    
 }
 
 h2 {
     font-size: 50px;
     margin-top: 0;
     margin-bottom: 20px;
+    
 }
 
 button {
+    display: flex;
+    justify-content: center;
+    margin-left: 42%;
     border: none;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -32,6 +43,9 @@ button {
 
 #increment-btn {
     background: darkred;
+}
+#decrement-btn {
+    background: rgb(0, 111, 139);
 }
 
 #save-btn {
