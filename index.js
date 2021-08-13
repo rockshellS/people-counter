@@ -1,22 +1,26 @@
 
 
-let countEl = document.getElementById("count-el")
-
+let countEl = document.querySelector("#count-el")
+let saveEl = document.querySelector('#save-el')
 
 
 let count = 0
 function increment() {
- count = count + 1
- countEl.innerHTML = count
+ count += 1
+ countEl.textContent = count
 }
 
 function decrement() {
-    count = count - 1
-    countEl.innerHTML = count
+    count -= 1
+    countEl.textContent = count
     
 }
 
 function save() {
-    console.log(count)
+   let countSaves =  " " + count + " - "
+    saveEl.textContent += countSaves
+    countEl.textContent = 0
+    count = 0
 }
-save()
+
+
